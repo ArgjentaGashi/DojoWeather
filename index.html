@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="headerInfo">
+            <h1>DojoWeather</h1>
+            <ul>
+                <li onclick="cityClicked()"><a href="#">Burbank</a></li>
+                <li onclick="cityClicked()"><a href="#">Chicago</a></li>
+                <li onclick="cityClicked()"><a href="#">Dallas</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="currentCity">
+            <h2>San Jose</h2>
+            <div class="convertTemperature">
+                <p>show temperature in</p>
+                <select onchange="convertor(this)">
+                    <option value="celcius">°C</option>
+                    <option value="fahrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="weatherForecast">
+            <div class="currentDay">
+                <h2>Today</h2>
+                <img src="images/some_rain.png" alt="rain-image">
+                <p>some rain</p>
+                <div class="currentTemperature">
+                    <h3> <span id="temp1">24</span>°</h3>
+                    <h3> <span id="temp2" >18</span>°</h3>
+                </div>
+            </div>
+            <div class="currentDay">
+                <h2>Today</h2>
+                <img src="images/some_sun.png" alt="sun-image">
+                <p>some sun</p>
+                <div class="currentTemperature">
+                    <h3> <span id="temp3" >27</span> °</h3>
+                    <h3> <span id="temp4" >19</span> °</h3>
+                </div>
+            </div>
+            <div class="currentDay">
+                <h2>Today</h2>
+                <img src="images/some_clouds.png" alt="cloud-image">
+                <p>some cloud</p>
+                <div class="currentTemperature">
+                    <h3> <span id="temp5">21</span>°</h3>
+                    <h3> <span id="temp6" >16</span> °</h3>
+                </div>
+            </div>
+            <div class="currentDay">
+                <h2>Today</h2>
+                <img src="images/some_sun.png" alt="sun-image">
+                <p>some sun</p>
+                <div class="currentTemperature">
+                    <h3> <span id="temp7" >26</span>°</h3>
+                    <h3> <span id="temp8" >21</span>°</h3>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="fixed">
+        <div class="cookie">
+            <img src="images/cookie.png" alt="cookie-image">
+            <div class="cookieInfo">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="removeCookie()">I Accept</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

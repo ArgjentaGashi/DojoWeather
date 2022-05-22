@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+main, .headerInfo, .cookie {
+    margin: auto;
+    width: 900px;
+}
+header {
+    height: 65px;
+    background-color: #9FC5F8;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: flex;
+    font-size: 1.4em;
+    align-items: center;
+}
+li {
+    margin-left: 35px;
+    list-style-type: none;
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+select {
+    border: 2px solid black;
+    margin-left: 15px;
+}
+/* header */
+.headerInfo {
+    display: flex;
+    justify-content: space-between;
+}
+/* current city info */
+.currentCity {
+    display: flex;
+    border-bottom: 3px solid black;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1em;
+    padding: 15px 0;
+}
+.convertTemperature {
+    display: flex;
+}
+/* weather forecast */
+
+.weatherForecast {
+    display: flex;
+    height: 320px;
+    margin-top: 25px;
+    justify-content: space-between;
+}
+.currentDay {
+    text-align: center;
+    background-color: #EEEEEE;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 35px;
+}
+.currentTemperature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+}
+.currentDay img {
+    width: 125px;
+    border-radius: 50%;
+}
+.currentTemperature h3:first-child{
+    color: #CF2C29;
+}
+.currentTemperature h3:last-child{
+    color: #2B78E4;
+}
+.currentDay p {
+    font-size: 1.1em;
+}
+/* cookies */
+.cookie {
+    padding: 0 25px;
+    margin-top: 10px;
+    height: 125px;
+    background-color: #EEEEEE;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 3px solid black;
+}
+.cookie img {
+    height: 70px;
+}
+.cookieInfo {
+width: 70%;
+font-weight: bold;
+}
+.cookieInfo p {
+    font-weight: normal;
+}
+button {
+    background-color: #9FC5F8;
+    height: 35px;
+    width: 110px;
+    border: 3px solid black;
+    box-shadow: 3px 3px;
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 1.005em;
+}
+.fixed {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
